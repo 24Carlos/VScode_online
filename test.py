@@ -55,11 +55,6 @@ opc2 = true_false(opc2)
 opc3 = input("Desea usar simbolos? Y/N: ")
 opc3 = true_false(opc3)
 
-for i in range(100):
-    print(generar_pass(length, opc1, opc2, opc3))
 
-    with open("pass.md", "a") as archivo_salida:
-        archivo_salida.write("pass -> " + generar_pass(length, opc1, opc2, opc3))
+print(generar_pass(length, opc1, opc2, opc3))
 
-    with open("pass.md", "a") as archivo_salida:
-        archivo_salida.write("\n")
